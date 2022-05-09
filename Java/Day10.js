@@ -1,61 +1,30 @@
-let snowflakes = []; // array to hold snowflake objects
+let num = 60;
+let mx = [];
+let my = [];
 
 function setup() {
-  createCanvas(400, 600);
-  fill(240);
+  createCanvas(720, 400);
   noStroke();
+  fill(255, 153);
+  for (let i = 0; i < num; i++) {
+    mx.push(i);
+    my.push(i);
+  }
 }
 
 function draw() {
-  background("brown");
-  let t = frameCount / 60; // update time
+  background(237, 34, 93);
 
-  // create a random number of snowflakes each frame
-  for (let i = 0; i < random(5); i++) {
-    snowflakes.push(new snowflake()); // append snowflake object
-  }
+  // Cycle through the array, using a different entry on each frame.
+  // Using modulo (%) like this is faster than moving all the values over.
+  let which = frameCount % num;
+  mx[which] = mouseX;
+  my[which] = mouseY;
 
-  // loop through snowflakes with a for..of loop
-  for (let flake of snowflakes) {
-    flake.update(t); // update snowflake position
-    flake.display(); // draw snowflake
+  for (let i = 0; i < num; i++) {
+    // which+1 is the smallest (the oldest in the array)
+    let index = (which + 1 + i) % num;
+    text("G", mx[index], my[index]);
+    textSize(36);
   }
 }
-
-// snowflake class
-function snowflake() {
-  // initialize coordinates
-  this.posX = 0;
-  this.posY = random(-50, 0);
-  this.initialangle = random(0, 2 * PI);
-  this.size = random(2, 5);
-
-  // radius of snowflake spiral
-  // chosen so the snowflakes are uniformly spread out in area
-  this.radius = sqrt(random(pow(width / 2, 2)));
-
-  this.update = function (time) {
-    // x position follows a circle
-    let w = 0.6; // angular speed
-    let angle = w * time + this.initialangle;
-    this.posX = width / 2 + this.radius * sin(angle);
-
-    // different size snowflakes fall at slightly different y speeds
-    this.posY += pow(this.size, 0.5);
-
-    // delete snowflake if past end of screen
-    if (this.posY > height) {
-      let index = snowflakes.indexOf(this);
-      snowflakes.splice(index, 1);
-    }
-  }
-
-  this.display = function () {
-    text("", this.posX, this.posY);
-  }
-  
-function mousePressed(){
- saveCanvas("Day10", "png")
-}
-
-}   
