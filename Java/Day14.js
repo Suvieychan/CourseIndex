@@ -1,11 +1,27 @@
+let angle = 0;
+
 function setup() {
-    createCanvas(1000, 1000);
-    background(142, 137, 150);
-    angleMode(DEGREES);
+  createCanvas(710, 400);
+  background(102);
+  noStroke();
+  fill(0, 102);
 }
 
 function draw() {
-
+  // Draw only when mouse is pressed
+  if (mouseIsPressed === true) {
+    angle += 5;
+    let val = cos(radians(angle)) * 12.0;
+    for (let a = 0; a < 360; a += 75) {
+      let xoff = cos(radians(a)) * val;
+      let yoff = sin(radians(a)) * val;
+      fill(0);
+      ellipse(mouseX + xoff, mouseY + yoff, val, val);
+    }
+    fill(255);
+    text("G", mouseX - 6, mouseY + 6);
+    textSize(14);
+  }
 
 function mousePressed(){
     saveCanvas("Day14", "png")
