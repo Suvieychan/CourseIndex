@@ -18,6 +18,4 @@ function setup() {
     
   
 }
-function mousePressed(){
-    saveCanvas("Day16", "png")
-}  
+ 
