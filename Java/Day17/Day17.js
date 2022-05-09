@@ -127,6 +127,3 @@ class Particle {
   }
  
 }
-function mousePressed(){
-  saveCanvas("Day17", "png")
-}
