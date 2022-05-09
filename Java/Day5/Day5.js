@@ -68,3 +68,7 @@ function draw() {
 
     
 }
+
+function mousePressed(){
+    saveCanvas("Day5", "png")
+}

@@ -52,3 +52,6 @@ class MRect {
     }
   }
 }
+function mousePressed(){
+  saveCanvas("Day3", "png")
+}

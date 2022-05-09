@@ -28,9 +28,9 @@ function draw() {
   }
 
   t = t + 0.009; // update time
-
+   
+}
 
 function mousePressed(){
-    saveCanvas("Day11", "png")
-}   
+  saveCanvas("Day11", "png")
 }

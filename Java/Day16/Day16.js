@@ -16,7 +16,8 @@ function setup() {
     text("G", inverseX, height / 2);
     textSize(inverseY / 2 + 10);
     
+  
+}
 function mousePressed(){
     saveCanvas("Day16", "png")
-}    
-}
+}  

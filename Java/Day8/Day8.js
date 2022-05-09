@@ -88,3 +88,7 @@ class Ball {
     textSize(this.diameter);
   }
 }
+
+function mousePressed(){
+  saveCanvas("Day8", "png")
+}

@@ -125,6 +125,8 @@ class Particle {
       line(this.position.x, this.position.y, other.position.x, other.position.y);
     }
   }
-  /*function mousePressed(){
-    saveCanvas("Day17", "png")*/
+ 
+}
+function mousePressed(){
+  saveCanvas("Day17", "png")
 }

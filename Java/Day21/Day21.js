@@ -130,4 +130,8 @@ CrazyParticle.prototype.display = function () {
   stroke(255, this.lifespan);
   line(0, 0, 25, 0);
   pop();
-};
+}
+
+function mousePressed(){
+  saveCanvas("Day21", "png")
+}

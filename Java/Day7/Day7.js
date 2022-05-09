@@ -26,3 +26,7 @@ function draw() {
   text("G", n, height / 2);
   textSize(64);
 }
+
+function mousePressed(){
+  saveCanvas("Day7", "png")
+}

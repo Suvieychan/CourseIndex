@@ -215,7 +215,8 @@ Boid.prototype.cohesion = function (boids) {
     return createVector(0, 0);
   }
 
+}
+
 function mousePressed(){
-    saveCanvas("Day13", "png")
-}  
+  saveCanvas("Day13", "png")
 }

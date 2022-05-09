@@ -137,3 +137,6 @@ Mover.prototype.checkEdges = function () {
  
   
 }
+function mousePressed(){
+  saveCanvas("Day19", "png")
+}

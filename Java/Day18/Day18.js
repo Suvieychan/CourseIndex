@@ -64,7 +64,10 @@ class Module {
       mods[i].draw();
     }
   }
-  
+
+
+
 function mousePressed(){
     saveCanvas("Day18", "png")
+    
 }    

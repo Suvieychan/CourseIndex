@@ -15,8 +15,9 @@ function setup() {
     fill(255, 10);
     text("G", x, height / 2); // Draw an ellipse at our "normal" random location
     textSize(32);
+ 
+}
 
 function mousePressed(){
-    saveCanvas("Day12", "png")
-}    
+  saveCanvas("Day12", "png")
 }

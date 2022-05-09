@@ -30,3 +30,7 @@ function draw() {
         saveCanvas("Day9", "png")
     } 
 }
+
+function mousePressed(){
+  saveCanvas("Day9", "png")
+}
