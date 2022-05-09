@@ -23,7 +23,8 @@ function draw() {
     textSize(14);
   }
 
+   
+}
 function mousePressed(){
     saveCanvas("Day14", "png")
-}    
-}
+} 

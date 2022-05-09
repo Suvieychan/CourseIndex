@@ -15,7 +15,8 @@ function setup() {
     text("G", mouseX - 66, mouseY);
     textSize(48);
     
-function mousePressed(){
-    saveCanvas("Day15", "png")
-}    
+ 
 }
+sfunction mousePressed(){
+    saveCanvas("Day15", "png")
+}   
