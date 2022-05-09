@@ -8,7 +8,7 @@ font-style: normal;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .A2NAV {
-    background-color: #26666e;
+    background-color: #ede9e9;
 }
 
 .A2NAV li {
@@ -22,7 +22,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 }
 
 .navbar {
-    background-color: #51949d;
+    background-color: #f2eeee;
     position: sticky;
     top: 0;
     width: 100%;
@@ -42,7 +42,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 }
 
 .banner {
-    background-color: #d7f2f5;
+    background-color: #dfdfdf;
     color: black;
     margin-top: 50px;
     text-align: center;
@@ -84,7 +84,7 @@ filter: drop-shadow(3px 3px 3px black);
 }
 
 #home-page {
-    color: #82bbc2;
+    color: #ffffff;
     font-size: 50px;
 }
 
@@ -102,5 +102,5 @@ filter: drop-shadow(3px 3px 3px black);
 }
 
 a.blue {
-    color: rgb(41, 41, 122);
+    color: rgb(96, 88, 168);
 }
